@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Smart Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    min-height:100vh;
+}
+
+header{
+    background: rgba(255,255,255,0.95);
+    padding:30px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+header h1{
+    color:#11998e;
+    font-size:2.5rem;
+}
+
+header p{
+    margin-top:10px;
+    color:#444;
+}
+
+.container{
+    max-width:1100px;
+    margin:40px auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:transform 0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#11998e;
+    margin-bottom:10px;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    height:120px;
+}
+
+ul{
+    margin-top:10px;
+    margin-left:18px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:white;
+    font-size:0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>📊 Student Smart Dashboard</h1>
+    <p>Track goals • Manage exams • Stay organized</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>🎯 Daily Goals</h2>
+        <input type="text" placeholder="Goal 1">
+        <input type="text" placeholder="Goal 2">
+        <input type="text" placeholder="Goal 3">
+    </div>
+
+    <div class="card">
+        <h2>🧪 Exam Tracker</h2>
+        <input type="text" placeholder="Subject Name">
+        <input type="date">
+        <textarea placeholder="Syllabus / Notes"></textarea>
+    </div>
+
+    <div class="card">
+        <h2>📚 Important Tasks</h2>
+        <ul>
+            <li>Assignment submission</li>
+            <li>Revision</li>
+            <li>Project work</li>
+        </ul>
+        <textarea placeholder="Add your tasks here..."></textarea>
+    </div>
+
+    <div class="card">
+        <h2>💡 Motivation Note</h2>
+        <textarea placeholder="Write a motivational quote or reminder..."></textarea>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Student Smart Dashboard | Learn • Plan • Achieve
+</footer>
+
+</body>
+</html>
